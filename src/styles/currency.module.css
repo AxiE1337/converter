@@ -1,0 +1,8 @@
+.currency {
+  height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=currency.module.css.map */
