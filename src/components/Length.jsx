@@ -279,7 +279,7 @@ const Length = () => {
   }
   return (
     <div className={styles.length}>
-      <container>
+      <div className={styles.content}>
         <Typography variant='h2'>Length converter</Typography>
         <section>
           <FormControl>
@@ -342,7 +342,7 @@ const Length = () => {
         >
           Reset
         </Button>
-      </container>
+      </div>
     </div>
   )
 }

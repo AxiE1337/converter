@@ -6,6 +6,9 @@
   justify-content: center;
   align-items: center;
 }
+.currency h2 {
+  margin-bottom: 1em;
+}
 .currency section {
   display: flex;
 }/*# sourceMappingURL=currency.module.css.map */

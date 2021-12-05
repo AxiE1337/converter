@@ -19,6 +19,7 @@ const NavBar = () => {
       >
         <MenuItem value='/'>Currency</MenuItem>
         <MenuItem value='/length'>Length</MenuItem>
+        <MenuItem value='/mass'>Mass</MenuItem>
       </Select>
     </div>
   )
