@@ -1,0 +1,11 @@
+.navbar {
+  height: 10vh;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .select {
+  margin-top: 1em;
+  width: 50%;
+}/*# sourceMappingURL=NavBar.module.css.map */

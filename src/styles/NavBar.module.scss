@@ -1,11 +1,11 @@
-.currency {
-  height: 100vh;
+.navbar {
+  height: 10vh;
   min-width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  section {
-    display: flex;
+  .select {
+    margin-top: 1em;
+    width: 50%;
   }
 }
