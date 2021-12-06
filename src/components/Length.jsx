@@ -19,7 +19,7 @@ const Length = () => {
     'millimeter',
     'feet',
     'inch',
-    'meter',
+    'Meter',
   ]
   const [select1, setSelect1] = useState('kilometers')
   const [select2, setSelect2] = useState('miles')
@@ -43,7 +43,7 @@ const Length = () => {
         setInputData2(value * 3280.84)
       } else if (select2.includes('inch')) {
         setInputData2(value * 39370.08)
-      } else if (select2.includes('meter')) {
+      } else if (select2.includes('Meter')) {
         setInputData2(value * 1000)
       }
     } else if (select1.includes('miles')) {
@@ -59,7 +59,7 @@ const Length = () => {
         setInputData2(value * 5280)
       } else if (select2.includes('inch')) {
         setInputData2(value * 63360)
-      } else if (select2.includes('meter')) {
+      } else if (select2.includes('Meter')) {
         setInputData2(value * 1609.344)
       }
     } else if (select1.includes('centimeter')) {
@@ -75,7 +75,7 @@ const Length = () => {
         setInputData2(value * 0.0328084)
       } else if (select2.includes('inch')) {
         setInputData2(value * 0.3937007992)
-      } else if (select2.includes('meter')) {
+      } else if (select2.includes('Meter')) {
         setInputData2(value * 0.0100000002997)
       }
     } else if (select1.includes('millimeter')) {
@@ -91,7 +91,7 @@ const Length = () => {
         setInputData2(value * 0.00328084)
       } else if (select2.includes('inch')) {
         setInputData2(value * 0.03937008)
-      } else if (select2.includes('meter')) {
+      } else if (select2.includes('Meter')) {
         setInputData2(value * 0.001)
       }
     } else if (select1.includes('feet')) {
@@ -107,7 +107,7 @@ const Length = () => {
         setInputData2(value * 304.8)
       } else if (select2.includes('inch')) {
         setInputData2(value * 12)
-      } else if (select2.includes('meter')) {
+      } else if (select2.includes('Meter')) {
         setInputData2(value * 0.3048)
       }
     } else if (select1.includes('inch')) {
@@ -123,11 +123,11 @@ const Length = () => {
         setInputData2(value * 25.4)
       } else if (select2.includes('feet')) {
         setInputData2(value * 0.08333333)
-      } else if (select2.includes('meter')) {
+      } else if (select2.includes('Meter')) {
         setInputData2(value * 0.0254)
       }
-    } else if (select1.includes('meter')) {
-      if (select2.includes('meter')) {
+    } else if (select1.includes('Meter')) {
+      if (select2.includes('Meter')) {
         setInputData2(value)
       } else if (select2.includes('kilometers')) {
         setInputData2(value * 0.001)
@@ -161,7 +161,7 @@ const Length = () => {
         setInputData1(value * 3280.84)
       } else if (select1.includes('inch')) {
         setInputData1(value * 39370.08)
-      } else if (select1.includes('meter')) {
+      } else if (select1.includes('Meter')) {
         setInputData1(value * 1000)
       }
     } else if (select2.includes('miles')) {
@@ -177,7 +177,7 @@ const Length = () => {
         setInputData1(value * 5280)
       } else if (select1.includes('inch')) {
         setInputData1(value * 63360)
-      } else if (select1.includes('meter')) {
+      } else if (select1.includes('Meter')) {
         setInputData1(value * 1609.344)
       }
     } else if (select2.includes('centimeter')) {
@@ -193,7 +193,7 @@ const Length = () => {
         setInputData1(value * 0.0328084)
       } else if (select1.includes('inch')) {
         setInputData1(value * 0.3937007992)
-      } else if (select1.includes('meter')) {
+      } else if (select1.includes('Meter')) {
         setInputData1(value * 0.0100000002997)
       }
     } else if (select2.includes('millimeter')) {
@@ -209,7 +209,7 @@ const Length = () => {
         setInputData1(value * 0.00328084)
       } else if (select1.includes('inch')) {
         setInputData1(value * 0.03937008)
-      } else if (select1.includes('meter')) {
+      } else if (select1.includes('Meter')) {
         setInputData1(value * 0.001)
       }
     } else if (select2.includes('feet')) {
@@ -225,7 +225,7 @@ const Length = () => {
         setInputData1(value * 304.8)
       } else if (select1.includes('inch')) {
         setInputData1(value * 12)
-      } else if (select1.includes('meter')) {
+      } else if (select1.includes('Meter')) {
         setInputData1(value * 0.3048)
       }
     } else if (select2.includes('inch')) {
@@ -241,11 +241,11 @@ const Length = () => {
         setInputData1(value * 25.4)
       } else if (select1.includes('feet')) {
         setInputData1(value * 0.08333333)
-      } else if (select1.includes('meter')) {
+      } else if (select1.includes('Meter')) {
         setInputData1(value * 0.0254)
       }
-    } else if (select2.includes('meter')) {
-      if (select1.includes('meter')) {
+    } else if (select2.includes('Meter')) {
+      if (select1.includes('Meter')) {
         setInputData1(value)
       } else if (select1.includes('kilometers')) {
         setInputData1(value * 0.001)

@@ -34,7 +34,7 @@ const Mass = () => {
       if (select2.includes('kilogram')) {
         setInputData2(value)
       } else if (select2.includes('Gram')) {
-        setInputData2(value / 1000)
+        setInputData2(value * 1000)
       } else if (select2.includes('miligram')) {
         setInputData2(value * 1000000)
       } else if (select2.includes('grain')) {
