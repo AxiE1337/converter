@@ -11,4 +11,5 @@
 }
 .currency section {
   display: flex;
+  align-items: center;
 }/*# sourceMappingURL=currency.module.css.map */

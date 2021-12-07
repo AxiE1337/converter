@@ -8,6 +8,8 @@ import {
   FormControl,
   MenuItem,
 } from '@mui/material'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 
 const Currency = () => {
   const currencyData = [
@@ -27,8 +29,10 @@ const Currency = () => {
   const [select2, setSelect2] = useState('USD')
   const [inputData1, setInputData1] = useState('')
   const [inputData2, setInputData2] = useState('')
+  const [arrow, setArrow] = useState(true)
 
   async function getData1(value1, select1) {
+    setArrow(true)
     try {
       const currencyDataAPI = await axios.get(
         `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${select1.toLowerCase()}/${select2.toLowerCase()}.json`
@@ -41,6 +45,7 @@ const Currency = () => {
     }
   }
   async function getData2(value2, select2) {
+    setArrow(false)
     try {
       const currencyDataAPI = await axios.get(
         `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${select2.toLowerCase()}/${select1.toLowerCase()}.json`
@@ -88,7 +93,13 @@ const Currency = () => {
             })}
           </Select>
         </FormControl>
-        <Typography variant='h1'>=</Typography>
+
+        {arrow ? (
+          <ArrowForwardIosIcon fontSize='large' />
+        ) : (
+          <ArrowBackIosIcon fontSize='large' />
+        )}
+
         <FormControl>
           <TextField
             variant='outlined'
